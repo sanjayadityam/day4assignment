@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Calculator.....
+        </title>
+    </head>
+    <body>
+        <script>
+            let operator=prompt("Enter an operator");
+            if(operator=="sqrt"){
+                var num=prompt("Enter a num");
+                console.log(Math.sqrt(num));
+            }
+            else{
+            var num1=prompt("Enter a number");
+            var num2=prompt("Enter another number");
+            function calc(n1,n2,op){
+                if(op=="+")
+                {
+                    return +n1 + +n2;
+                }
+                else if(op=="-"){
+                    if(n1>n2){
+                        return n1-n2
+                    }
+                    else{
+                        return n2-n1;
+                    }
+                }
+                else if(op=="*"){
+                    return n1*n2;
+                }
+                else if(op=="/"){
+                    return n1/n2;
+                }
+                else if(op=="%"){
+                    return n1%n2;
+                }
+                
+            }
+            let res=calc(num1,num2,operator);
+            console.log(res);
+            }
+        </script>
+    </body>
+</html>
+
+
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Commission.....
+        </title>
+    </head>
+    <body>
+        <script>
+            var amt= +prompt("Enter the sales amount:")
+            var tot_comm;
+            if(amt>=0&&amt<=5000){
+                tot_comm=amt*0.02;
+            }
+            if(amt>=5001&&amt<=10000){
+                tot_comm=(5000*0.02)+((amt-5000)*0.05)
+            }
+            if(amt>=10001&&amt<=20000){
+                tot_comm=(5000*0.02)+(5000*0.05)+((amt-10000)*0.07);
+            }
+            if(amt>20000){
+                tot_comm=(5000*0.02)+(5000*0.05)+(10000*0.07)+((amt-20000)*0.1);
+            }
+            console.log(`The commission amount earned by you is ${tot_comm}`);
+        </script>
+    </body>
+</html>
